@@ -1,0 +1,28 @@
+﻿@using Employee_Addition_Form_FrontEnd.Consts
+@model Employee
+
+<tr class="text-center">
+	<td>@Model.Name</td>
+	<td>@Model.JobRole</td>
+	<td>@Model.Gender</td>
+	<td>@(Model.IsFirstAppointment ? "Yes" : "No")</td>
+	<td>@Model.StartDate.ToString("dd-MM-yyyy")</td>
+	<td>@Model.Notes</td>
+
+	<td class="nav-item dropdown p-0 text-center">
+		<div class="dropdown">
+			<a href="javascript:;" class="nav-link" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				<svg xmlns="http://www.w3.org/2000/svg" width="1.19em" height="1em" viewBox="0 0 1664 1408"><path fill="currentColor" d="M768 896v384q0 52-38 90t-90 38H128q-52 0-90-38t-38-90V896q0-52 38-90t90-38h512q52 0 90 38t38 90m0-768v384q0 52-38 90t-90 38H128q-52 0-90-38T0 512V128q0-52 38-90t90-38h512q52 0 90 38t38 90m896 768v384q0 52-38 90t-90 38h-512q-52 0-90-38t-38-90V896q0-52 38-90t90-38h512q52 0 90 38t38 90m0-768v384q0 52-38 90t-90 38h-512q-52 0-90-38t-38-90V128q0-52 38-90t90-38h512q52 0 90 38t38 90" /></svg>
+			</a>
+			<ul class="dropdown-menu">
+				<li>
+					<a class="dropdown-item js-render-model" data-title="Edit Employee" data-url="/Employees/Edit/@Model.Id" data-update="true">Edit</a>
+				</li>
+				<div class="dropdown-divider"></div>
+				<li><a class="dropdown-item js-delete" href="javascript:;" data-url="Employees/Delete/@Model?.Id">Delete</a></li>
+			</ul>
+		</div>
+	</td>
+
+</tr>
+

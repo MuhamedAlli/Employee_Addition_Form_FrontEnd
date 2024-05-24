@@ -1,0 +1,52 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "popper.js@2.11.8",
+      "destination": "wwwroot/lib/popper.js/",
+      "files": [
+        "umd/popper.min.js"
+      ]
+    },
+    {
+      "library": "datatable@2.0.2",
+      "destination": "wwwroot/lib/datatable/"
+    },
+    {
+      "library": "sweetalert2@11.11.0",
+      "destination": "wwwroot/lib/sweetalert2/",
+      "files": [
+        "sweetalert2.min.js",
+        "sweetalert2.css"
+      ]
+    },
+    {
+      "library": "bootstrap-popup@1.0.1",
+      "destination": "wwwroot/lib/bootstrap-popup/",
+      "files": [
+        "bootstrap-popup.min.css"
+      ]
+    },
+    {
+      "library": "jquery@3.7.1",
+      "destination": "wwwroot/lib/jquery/"
+    },
+    {
+      "library": "bootstrap@5.3.3",
+      "destination": "wwwroot/lib/bootstrap/"
+    },
+    {
+      "library": "jquery-ajax-unobtrusive@3.2.6",
+      "destination": "wwwroot/lib/jquery-ajax-unobtrusive/"
+    },
+    {
+      "library": "animateCSS@1.2.2",
+      "destination": "wwwroot/lib/animateCSS/"
+    },
+    {
+      "library": "bootbox.js@6.0.0",
+      "destination": "wwwroot/lib/bootbox.js/"
+    }
+  ]
+}
